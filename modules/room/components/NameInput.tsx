@@ -34,6 +34,7 @@ const NameInput = () => {
   }, [roomId, router]);
 
   useEffect(() => {
+    document.body.style.backgroundColor = '#403f3b';
     const handleJoined = (roomIdFromServer: string, failed?: boolean) => {
       if (failed) {
         router.push('/');
